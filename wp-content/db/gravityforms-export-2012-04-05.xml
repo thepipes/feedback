@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms version="1.6.3.2.1">
+	<form labelPlacement="top_label" useCurrentUserAsAuthor="1">
+		<title><![CDATA[Contact Sales]]></title>
+		<description><![CDATA[To discuss pricing, security, and to request additional materials, please use the form below or call <strong>888-926-7377 / +1-415-796-7400</strong>. For help requests and other inquiries, please use our <a href="http://help.yammer.com" target="_blank">help section</a>.
+<br /><br/>
+* = required field.]]></description>
+		<confirmation type="message">
+			<message><![CDATA[Thanks for contacting us! We will get in touch with you shortly.]]></message>
+		</confirmation>
+		<button type="text">
+			<text><![CDATA[Submit]]></text>
+		</button>
+		<fields>
+			<field id="1" isRequired="1" size="medium" type="name" nameFormat="simple">
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Name]]></label>
+			</field>
+			<field id="2" isRequired="1" size="medium" type="email">
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Email]]></label>
+			</field>
+			<field id="3" size="medium" type="text">
+				<adminLabel><![CDATA[title]]></adminLabel>
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Job Title]]></label>
+			</field>
+			<field id="4" size="medium" type="text">
+				<adminLabel><![CDATA[company]]></adminLabel>
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Company Name]]></label>
+			</field>
+			<field id="7" isRequired="1" size="medium" type="select" enableEnhancedUI="0">
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Country]]></label>
+				<choices>
+					<choice>
+						<text><![CDATA[Afghanistan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Albania]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Algeria]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Andorra]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Antigua]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Argentina]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Armenia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Aruba]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ascension Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Australia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Austria]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Azerbaijan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bahamas]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bahrain]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bangladesh]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Barbados]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Barbuda]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Belarus]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Belgium]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Belize]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Benin]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bermuda]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bhutan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bolivia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bosnia and Herzegovina]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Botswana]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Brazil]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[British Virgin Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Brunei]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Bulgaria]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cambodia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cameroon]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Canada]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cape Verde]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cayman Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Channel Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Chile]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[China]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Christmas Island]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cocos Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Colombia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Costa Rica]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Croatia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cuba]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Cyprus]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Czech Republic]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Democratic Republic of Congo]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Denmark]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Dominica]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Dominican Republic]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ecuador]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Egypt]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[El Salvador]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Estonia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ethiopia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Faroe Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Fiji]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Finland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[France]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[French Polynesia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Georgia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Germany]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ghana]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Gibraltar]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Greece]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Greenland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Guatemala]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Guyana]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Honduras]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Hong Kong]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Hungary]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Iceland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[India]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Indonesia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Iran]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Iraq]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ireland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Isle of Man]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Israel]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Italy]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ivory Coast]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Jakarta]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Jamaica]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Japan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Jordan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Kazakhstan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Kenya]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Kuwait]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Laos]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Latvia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Lebanon]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Liberia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Libya]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Liechtenstein]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Lithuania]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Luxembourg]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Macedonia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Malaysia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Maldives]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Mali]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Malta]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Mauritius]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Mexico]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Micronesia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Monaco]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Mongolia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Montenegro]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Montserrat]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Morocco]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Mozambique]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Nairobi]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Namibia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Nepal]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Netherlands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Netherlands Antilles]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[New Zealand]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Nicaragua]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Nigeria]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Niue]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Norway]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Oman]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Pakistan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Palestine]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Panama]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Papua New Guinea]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Paraguay]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Peru]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Philippines]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Poland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Portugal]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Qatar]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Republic of Moldova]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Romania]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Russia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Samoa]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Saudi Arabia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Senegal]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Serbia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Sierra Leone]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Singapore]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Slovakia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Slovenia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Solomon Islands]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[South Africa]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[South Korea]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Spain]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Sri Lanka]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Sudan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Suriname]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Sweden]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Switzerland]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Syria]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Taiwan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Tajikistan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Tanzania]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Thailand]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Tonga]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Trinidad and Tobago]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Tunisia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Turkey]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Turkmenistan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Tuvalu]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Uganda]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Ukraine]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[United Arab Emirates]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[United Kingdom]]></text>
+					</choice>
+					<choice isSelected="1">
+						<text><![CDATA[United States]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Uruguay]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Uzbekistan]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Vanuatu]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Venezuela]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Vietnam]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Zambia]]></text>
+					</choice>
+					<choice>
+						<text><![CDATA[Zimbabwe]]></text>
+					</choice>
+				</choices>
+			</field>
+			<field id="5" isRequired="1" size="medium" type="phone" phoneFormat="international">
+				<adminLabel><![CDATA[phone]]></adminLabel>
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Phone Number]]></label>
+			</field>
+			<field id="6" isRequired="1" size="small" type="textarea">
+				<adminLabel><![CDATA[description]]></adminLabel>
+				<cssClass><![CDATA[full-input]]></cssClass>
+				<label><![CDATA[Comments]]></label>
+			</field>
+			<field id="8" size="medium" type="hidden">
+				<defaultValue><![CDATA[Contact Sales Form]]></defaultValue>
+				<label><![CDATA[lead_source]]></label>
+			</field>
+			<field id="9" size="medium" type="hidden">
+				<defaultValue><![CDATA[{ip}]]></defaultValue>
+				<label><![CDATA[00N80000004SfsU]]></label>
+			</field>
+		</fields>
+		<enableSalesforce><![CDATA[1]]></enableSalesforce>
+		<descriptionPlacement><![CDATA[below]]></descriptionPlacement>
+		<notification>
+			<subject><![CDATA[New submission from {form_title}]]></subject>
+			<message><![CDATA[{all_fields}]]></message>
+			<from><![CDATA[{admin_email}]]></from>
+		</notification>
+		<autoResponder>
+			<from><![CDATA[{admin_email}]]></from>
+		</autoResponder>
+	</form>
+	<form labelPlacement="top_label" useCurrentUserAsAuthor="1">
+		<title><![CDATA[Get Started]]></title>
+		<description><![CDATA[To learn more about Yammer's Affiliate Partner Program, please provide your information below or email <a href="mailto:partners@yammer-inc.com">partners@yammer-inc.com</a>. For help requests or other inquiries, please visit our <a href="http://help.yammer.com" target="_blank">help section</a>.]]></description>
+		<confirmation type="message">
+			<message><![CDATA[Thanks for contacting us! We will get in touch with you shortly.]]></message>
+		</confirmation>
+		<button type="text">
+			<text><![CDATA[Submit]]></text>
+		</button>
+		<fields>
+			<field id="1" isRequired="1" size="medium" type="name" nameFormat="simple">
+				<adminLabel><![CDATA[name]]></adminLabel>
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Full Name]]></label>
+			</field>
+			<field id="2" isRequired="1" size="medium" type="email">
+				<adminLabel><![CDATA[email]]></adminLabel>
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Email Address]]></label>
+			</field>
+			<field id="3" isRequired="1" size="medium" type="text">
+				<adminLabel><![CDATA[company]]></adminLabel>
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Company Name]]></label>
+			</field>
+			<field id="4" isRequired="1" size="medium" type="text">
+				<adminLabel><![CDATA[title]]></adminLabel>
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Job Title]]></label>
+			</field>
+			<field id="5" isRequired="1" size="medium" type="phone" phoneFormat="international">
+				<adminLabel><![CDATA[phone]]></adminLabel>
+				<cssClass><![CDATA[left-input]]></cssClass>
+				<label><![CDATA[Phone Number]]></label>
+			</field>
+			<field id="6" size="medium" type="select" enableChoiceValue="1">
+				<adminLabel><![CDATA[employees]]></adminLabel>
+				<cssClass><![CDATA[right-input]]></cssClass>
+				<label><![CDATA[Size of Company]]></label>
+				<choices>
+					<choice>
+						<text></text>
+						<value></value>
+					</choice>
+					<choice>
+						<text><![CDATA[1-10]]></text>
+						<value><![CDATA[1]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[11-50]]></text>
+						<value><![CDATA[10]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[51-200]]></text>
+						<value><![CDATA[50]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[201-500]]></text>
+						<value><![CDATA[200]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[501-1000]]></text>
+						<value><![CDATA[500]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[1000+]]></text>
+						<value><![CDATA[1000]]></value>
+					</choice>
+				</choices>
+			</field>
+			<field id="8" size="medium" type="checkbox" enableChoiceValue="1">
+				<adminLabel><![CDATA[00N80000004w9CX]]></adminLabel>
+				<cssClass><![CDATA[yj-clearfix]]></cssClass>
+				<label><![CDATA[Vertical Focus]]></label>
+				<choices>
+					<choice>
+						<text><![CDATA[Change Management]]></text>
+						<value><![CDATA[Change Management]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[Custom Application Development]]></text>
+						<value><![CDATA[Custom Application Development]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[Social Collaboration]]></text>
+						<value><![CDATA[Social Collaboration]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[Systems Integrator]]></text>
+						<value><![CDATA[Systems Integrator]]></value>
+					</choice>
+					<choice>
+						<text><![CDATA[Other]]></text>
+						<value><![CDATA[Other]]></value>
+					</choice>
+				</choices>
+			</field>
+			<field id="9" size="medium" type="textarea">
+				<adminLabel><![CDATA[00N80000004w9CS]]></adminLabel>
+				<label><![CDATA[Comments]]></label>
+			</field>
+			<field id="10" size="medium" type="hidden">
+				<defaultValue><![CDATA[Partner Site]]></defaultValue>
+				<label><![CDATA[lead_source]]></label>
+			</field>
+			<field id="11" size="medium" type="hidden">
+				<defaultValue><![CDATA[{ip}]]></defaultValue>
+				<label><![CDATA[00N80000004SfsU]]></label>
+			</field>
+		</fields>
+		<enableSalesforce><![CDATA[1]]></enableSalesforce>
+		<descriptionPlacement><![CDATA[below]]></descriptionPlacement>
+		<notification>
+			<to><![CDATA[{admin_email}]]></to>
+			<subject><![CDATA[New submission from {form_title}]]></subject>
+			<message><![CDATA[{all_fields}]]></message>
+		</notification>
+	</form>
+</forms>

@@ -1,0 +1,101 @@
+WELCOME TO WORDPRESS FOR YAMMER PUBLIC SITE!!!
+
+This repo contains the wordpress wp-content folder which is where all themes and plugins are stored.
+
+INSTALLATION
+
+1. Download MAMP (http://www.mamp.info/en/downloads/index.html) and install it.  This will configure MySQL, Apache and PHP for you.
+2. Download the latest version of WordPress (http://wordpress.org/)
+3. Unzip WP and drop it into Applications/MAMP/htdocs folder.  
+4. Clone this repo into Applications/MAMP/htdocs/wordpress/wp-content  
+5. Make sure MAMP is running, and navigate to your localhost.  ex: http://localhost:8888/
+6. Create a db in MySQL using phpMyAdmin and import db/yampress.sql.
+7. Edit wordpress/wp-config-sample.php and save as wp-config.php.
+8. Run the WordPress install at http://localhost:8888/wordpress
+9. Login and activate the Roots theme (Yamkit 12 column version) and all the Plugins. (You may need to save the plugin options and then copy the yamkit default values into the input boxes.)
+10. If you get a 404 error when creating a new page or post, go to settings > permalinks and click save changes without changing any settings.
+
+GETTING DATA INTO YOUR ENVIRONMENT
+1. So you want real-world data?  Fair enough, you can grab the latest off of staging or production.
+2. Make sure you're on the Yammer VPN and login to either public-stage.int.yammer.com public-prod.int.yammer.com.
+3. Go to tools->export and download the exported .xml file.
+4. In your local environment, navigate to tools -> import, select  wordpress (you may need to download and install the wordpress importer if prompted)
+5. Make sure you select to download images if you want them.  This will add time, just let it run and yes it'll take a while.
+6. Once you're all done you may still see some quirks in your local install, this is due to plugin and widget data not being exported/imported by wordpress this way.
+You'll just want to navigate to the environment you grabbed your data from and configure your local plugins (breadcrumb, seo, etc) and widgets (and sidebars) similarly.
+
+
+THEMEING
+
+We've edited the Roots theme removing parts of HTML5Boilerplate we're not using and added YamKit.
+The theme files are located in wp-content/themes/roots
+
+For info on using roots and why it's awesome to build on, see: http://www.rootstheme.com/ 
+
+~to do: info on custom post types and shortcodes~
+
+PLUGINS
+
+We're utilizing as little plugins as we can. Each new plugin adds to the memory footprint that WordPress already hogs up.  Where possible, we will use native WP functionality or well written plugins.  We also won't reinvent the wheel.  When in doubt, ask!
+
+What we're using and what it does:
+1. Breadcrumb Navxt - manages breadcrumbs dynamically and awesomely
+2. Broken Link Checker - checks if any of our page links are broken, good for content management
+3. Category Posts Yammer - widget to display posts in a given category (used on press pages)
+4. Client Quote Widget - widget to display a quote from a customer
+5. External Permalinks - allows an easy way in the editor to have the post/page link externally
+6. feedwordpress - importer used to migrate other blogs into the current wp instance via rss. (not active)
+7. gravity forms - used to create forms (sales, etc) and integrates with Salesforce
+8. Image Widget Yammer - widget for adding an image to the sidebar
+9. Meta Box Yammer - we use this plugin for almost all the metaboxes in the admin interface.
+10. Quote Widget - Used for displaying customer quotes in the sidebars.
+11. Simple 301 Redirects - easy interface for managing 301s (from old yammer site to the new pages)
+12. Twitter Widget Pro - sidebar integration with Twitter
+13. Wordpress SEO (Youst) - the best SEO plugin for wordpress.
+14. WYSIWYG Widgets Yammer - allows for WYSIWYG editor in the sidebar as a widget
+15. YD Feed Wordpress - plugin for Feedwordpress (not active)
+
+TESTING (IE on VirtualBox)
+1. Have MAMP's Apache run on port 80
+- Open MAMP -> Preferences -> Ports, change apache to 80
+2. Create a VHOSTS entry
+- In your MAMP directory, navigate to httpd-vhosts.conf (should be in /Applications/MAMP/conf/apache/extra)
+- create the following entry:
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "/Applications/MAMP/htdocs/DIRECTORY_WHERE_YOU_HAVE_WORDPRESS"
+    ServerName www.yps.com
+    ErrorLog "logs/dummy-host2.example.com-error_log"
+    CustomLog "logs/dummy-host2.example.com-access_log" common
+</VirtualHost>
+where DIRECTORY_WHERE_YOU_HAVE_WORDPRESS is your wordpress directory and ServerName can be anything, just remember it.
+3. Fire up your VirtualBox VM and edit your hosts file (/windows/system32/drivers/etc/hosts
+and create an entry for the server name you created
+10.0.2.2  www.yps.com
+4. On your mac create a hosts file entry same as Step 3.
+5. Navigate to your wp-admin and change your site settings under Settings -> general to the domain you chose in step 2 (www.yps.com)
+6. Save it, then restart MAMP.
+4. Fire up your browser in your VM or mac, navigate to the server name (www.yps.com).
+5. HAPPY TESTING!!!
+
+PUSHING TO STAGING/PRODUCTION PREREQS
+
+Disclaimer: There are other ways of doing this, but for consistency and security we do it this way.  Obviously, we need to improve this process a bit.
+
+1. You'll need to compile less locally.  Follow the instructions here for server side usage: http://lesscss.org/
+2. Compile less like so in the css/yammer directory: /node_modules/less/bin/lessc --yui-compress yammer.less > yammer.css (if you installed lessc elsewhere, of course you'll need to use that path)
+This minifies the css for us automagically as well.
+3. You'll want to compress the theme folder at this point.  If you're making a plugin change, you'll have to compress that folder.
+
+PUSHING TO STAGING/PRODUCTION
+Always push to staging first to make sure you don't break anything.  It's much easier and less stressful to fix staging (and the process you're executing) than production!
+
+1) You'll need to VPN into firehost (page.ly's hosting provider).
+2) Once you're in, you'll then need to ssh into the server.
+3) Once you're in, you'll need to scp the compressed zip file into the home directory (I put it in /home/jgonzalez/roots).
+4) You'll need sudo access to uncompress the file into the right location, just do sudo -i and enter your pw when prompted.
+5) Unzip into the environemnt you want, staging is like so: unzip roots.zip -d /var/www/vhosts/public-stage.int.yammer.com/httpdocs/wp-content/themes
+6) Switch into the Yammer VPN and navigate to public-stage.int.yammer.com and login to the admin.
+7) Navigate to  appearence -> theme options and increment the version number/letter (this needs to be unique of course) and click save.
+8) Navigate to Performance -> general and on the top click on clear all caches.
+9) Test your changes.  Repeat if necessary.  Once you're golden, verify the process on stage.  Then push to prod following the same process above)
